@@ -1,0 +1,38 @@
+{
+  "name": "modern_stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node node_modules/prettier/bin-prettier --check \"**/*.{js,json,ts,yml,yaml}\"",
+    "prepare": "husky install",
+    "prettier": "node node_modules/prettier/bin-prettier --check \"**/*.{js,json,ts,yml,yaml}\"",
+    "prettier:write": "node node_modules/prettier/bin-prettier --write \"**/*.{js,json,ts,yml,yaml}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "fbjs-scripts": "^3.0.1",
+    "commitizen": "^4.2.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
